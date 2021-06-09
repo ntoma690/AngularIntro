@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularIntro';
+  name = 'nisha'
+  getName() {
+    return this.name
+  }
+
+  obj = {
+    name: "Nisha kant",
+    age: 25
+  }
+  a = 100;
+  b = 200;
+  c= 300;
 }
