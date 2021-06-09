@@ -11,6 +11,10 @@ export class AppComponent {
   getName() {
     return this.name
   }
+  getFuncDemo(nxame: any)
+  {
+        alert(nxame);
+  }
 
   obj = {
     name: "Nisha kant",
