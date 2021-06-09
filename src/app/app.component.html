@@ -1,8 +1,21 @@
 <h1>Nisha Kant Tomar</h1>
-<app-user-list></app-user-list>
+<!-- <app-user-list></app-user-list>
 <app-login></app-login>
-<app-signup></app-signup>
+<app-signup></app-signup> -->
 
-<button (click) = "getFuncDemo('nisha kant Tomar')">Create an Alert</button>
+<!-- <button (click) = "getFuncDemo('nisha kant Tomar')">Create an Alert</button> -->
+<button (click)="getMyEvent('nisha kant Tomar')">Click Me</button>
+<br><br>
+<!-- <input type="text" #box (keyup)="getMyEvent(box.value)"/> -->
+<input type="text" #box (keyup.enter)="getMyEvent(box.value)" />
+<br><br>
+<input type="text" #box2 (keyup.space)="getMyEvent(box2.value)" />
+<br><br>
+<input type="text" #box3 (keydown.enter)="getMyEvent(box3.value)" />
+<br><br>
+<input type="text" #box4 (keydown.space)="getMyEvent(box4.value)" />
+<br><br>
+<input type="text" #box4 (blur)="getMyEvent('Blur Event')" />
 
-
+<div (mouseover)="getMyEvent('Mouse in')" style="background-color:saddlebrown;">Mouse Event</div>
+<div (mouseleave)="getMyEvent('Mouse out')" style="background-color: aqua;">Mouse Event</div>

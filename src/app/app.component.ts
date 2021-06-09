@@ -11,9 +11,12 @@ export class AppComponent {
   getName() {
     return this.name
   }
-  getFuncDemo(nxame: any)
-  {
-        alert(nxame);
+  getFuncDemo(nxame: any) {
+    alert(nxame);
+  }
+
+  getMyEvent(evt: any) {
+    console.warn(evt)
   }
 
   obj = {
@@ -22,5 +25,5 @@ export class AppComponent {
   }
   a = 100;
   b = 200;
-  c= 300;
+  c = 300;
 }
